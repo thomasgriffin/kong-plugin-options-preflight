@@ -21,7 +21,7 @@ function plugin:access(config)
 		-- Set headers to allow the request to continue.
 		ngx.header["Vary"] = "Origin"
 		ngx.header["Content-Length"] = "0"
-		ngz.header["Access-Control-Max-Age"] = "600"
+		ngx.header["Access-Control-Max-Age"] = "600"
 		ngx.header["Access-Control-Allow-Origin"] = "*"
 		ngx.header["Access-Control-Allow-Methods"] = "GET,HEAD,PUT,PATCH,POST,DELETE"
 		ngx.header["Access-Control-Allow-Headers"] = "X-CSRF-Token,X-XSRF-Token,Bearer-Token,X-Auth-Token,Origin,X-Requested-With,Content-Type,Accept,Authorization"
